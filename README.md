@@ -1,3 +1,9 @@
+Original author : [Lameguy64](http://lameguy64.net)
+
+Just adding a few corrections here and there :
+
+* Scale Factor is now used when exporting.
+
 # Blender-RSD-Plugin
 A Blender Plug-in for Exporting Models in PlayStation SDK RSD Format.
 
