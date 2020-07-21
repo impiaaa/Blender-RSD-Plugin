@@ -98,8 +98,8 @@ class ExportRSD(bpy.types.Operator, ExportHelper):
             # Write vertices
             f.write("# Vertices\n")
             for v in mesh.vertices:
-                f.write("%E %E %E\n" % (v.co.x, -v.co.z, v.co.y))
-            
+                f.write("%E %E %E\n" % (v.co.x * self.exp_scaleFactor, -v.co.z * self.exp_scaleFactor, v.co.y * self.exp_scaleFactor))
+
             # Write normals
             f.write("# Normals\n")
             f.write("# Smooth normals begin here\n")
