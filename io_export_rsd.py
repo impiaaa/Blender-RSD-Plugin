@@ -257,6 +257,9 @@ class ExportRSD(bpy.types.Operator, ExportHelper):
                                 color = col[index_tab[j]]
                                 color = (int(color[0]*color_mul), int(color[1]*color_mul), int(color[2]*color_mul))
                                 f.write("%d %d %d " % (color[0], color[1], color[2]))
+                            # according to filefrmt.pdf, section 2-10, figure 2-15, "(4th vertex is 0,0,0 for triangles)"
+			    if (len(p.vertices) == 3):
+                                f.write("0 0 0")
                         else:
                             color = col[0]
                             color = (int(color[0]*color_mul),
