@@ -21,9 +21,9 @@ from bpy_extras.io_utils import (ImportHelper,
 
 bl_info = {
     "name":         "Export: Playstation RSD,PLY,MAT Model Format",
-    "author":       "Jobert 'Lameguy' Villamor (Lameguy64)",
+    "author":       "Jobert 'Lameguy' Villamor (Lameguy64), ABelliqueux",
     "blender":      (2,6,9),
-    "version":      (2,0,0),
+    "version":      (2,0,1),
     "location":     "File > Export",
     "description":  "Export mesh to PlayStation SDK compatible RSD,PLY,MAT format",
     "support":      "COMMUNITY",
